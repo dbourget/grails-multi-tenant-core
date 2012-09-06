@@ -20,4 +20,8 @@ grails.project.dependency.resolution =
       // This allows the plugin to compile.  If the user wants to use the OSCache multi tenant capability they will
       // need to add the jars to their runtime configuration for the application.
     }
+    plugins
+    {
+      compile ":falcone-util:1.1-DEV"
+    }
   }
