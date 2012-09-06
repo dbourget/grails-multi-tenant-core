@@ -29,9 +29,9 @@ import grails.plugin.multitenant.core.CurrentTenantThreadLocal
 
 class MultiTenantCoreGrailsPlugin
 {
-  def version = "1.0.4"
+  def version = "1.0.5-DEV"
   def grailsVersion = "1.3.0 > *"
-  def dependsOn = [falconeUtil: "1.0"]
+  def dependsOn = [falconeUtil: "1.1-DEV"]
   def author = "Eric Martineau, Scott Ryan"
   def authorEmail = "ericm@infusionsoft.com, scryan@codehaus.org"
   def title = "Multi-Tenant Plugin(Core)"
