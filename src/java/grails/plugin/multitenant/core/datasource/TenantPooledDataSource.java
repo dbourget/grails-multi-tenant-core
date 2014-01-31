@@ -4,6 +4,7 @@ import grails.plugin.multitenant.core.CurrentTenant;
 import org.apache.commons.dbcp.BasicDataSource;
 
 import java.sql.SQLException;
+import java.sql.SQLFeatureNotSupportedException;
 
 import javax.sql.DataSource;
 
@@ -42,6 +43,10 @@ public class TenantPooledDataSource extends BasicDataSource implements TenantDat
 
     public <T> T unwrap(Class<T> tClass) throws SQLException {
         throw new UnsupportedOperationException();
+    }
+
+    public java.util.logging.Logger getParentLogger() throws SQLFeatureNotSupportedException {
+        throw new SQLFeatureNotSupportedException();
     }
 
 // ======================================================================================================================== 

@@ -38,6 +38,10 @@ public class TenantClassInjector implements ClassInjector
         }
     }
 
+    public void performInjectionOnAnnotatedClass(SourceUnit source, ClassNode classNode)
+    {
+      performInjection(source, classNode);
+    }
 
     public boolean shouldInject(URL url)
     {
